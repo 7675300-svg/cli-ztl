@@ -1,12 +1,12 @@
 #!/bin/bash
-# Claude Code 中文状态栏 一键安装
+# cli ztl（Claude Code 中文状态栏）一键安装
 # 用法：bash install.sh   （或用 README 里的 curl 一行命令）
 set -e
 
 CLAUDE_DIR="${CLAUDE_CONFIG_DIR:-$HOME/.claude}"
-TARGET="$CLAUDE_DIR/statusline-zh.sh"
+TARGET="$CLAUDE_DIR/ztl.sh"
 SETTINGS="$CLAUDE_DIR/settings.json"
-SRC_URL="${STATUSLINE_SRC_URL:-https://raw.githubusercontent.com/7675300-svg/claude-statusline-zh/main/statusline.sh}"
+SRC_URL="${STATUSLINE_SRC_URL:-https://raw.githubusercontent.com/7675300-svg/cli-ztl/main/statusline.sh}"
 
 command -v python3 >/dev/null || { echo "❌ 需要 python3（Mac 自带；Linux 请先安装）"; exit 1; }
 mkdir -p "$CLAUDE_DIR"

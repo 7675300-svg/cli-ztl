@@ -1,4 +1,4 @@
-# Claude Code 中文状态栏
+# cli ztl — Claude Code 中文状态栏
 
 给 Claude Code 底部加一个两行的中文状态栏，用量、花费、时长一眼看清。
 
@@ -22,12 +22,12 @@ Opus 5.5 │ 🧠 █░░░░░ 10% │ 5h █░░░░░ 12%(2时53分
 在终端里运行：
 
 ```bash
-curl -fsSL https://raw.githubusercontent.com/7675300-svg/claude-statusline-zh/main/install.sh | bash
+curl -fsSL https://raw.githubusercontent.com/7675300-svg/cli-ztl/main/install.sh | bash
 ```
 
 然后新开一个 Claude Code 窗口即可。
 
-- 会把脚本放到 `~/.claude/statusline-zh.sh`，并修改 `~/.claude/settings.json` 里的 `statusLine`。
+- 会把脚本放到 `~/.claude/ztl.sh`，并修改 `~/.claude/settings.json` 里的 `statusLine`。
 - 修改前会自动备份原设置（`settings.json.bak.时间`），其他设置不动。
 - 需要 `python3`（Mac 自带）。
 
